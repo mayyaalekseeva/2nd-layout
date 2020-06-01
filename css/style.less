@@ -2,13 +2,35 @@
 @padding: 50px @width/6.5;
 @button-color: #998675;
 
+.hover() {
+    color: #998675;
+}
 
+.active() {
+    color: #363636;
+}
+
+.hover-btn {
+    background-color: #c7b299;
+}
+
+.active-btn {
+    background-color: #363636;
+}
+
+.p-style() {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+    font-family: Montserrat;
+
+}
 
 
 
 .h2-style() {
     font-family: Raleway;
-    font-size: 30px;
     line-height: 1.2;
     font-weight: 600;
     color: #555555;
@@ -53,10 +75,14 @@ header {
     &-svg {
         fill: currentColor;
     }
-}
 
-.header-logo:hover {
-    color: #c7b299;
+    &:hover {
+        .hover()
+    }
+
+    &:active {
+        .active()
+    }
 }
 
 .header-nav-wrp {
@@ -78,11 +104,11 @@ header {
     }
 
     &-link:hover {
-        color: #998675;
+        .hover()
     }
 
     &-link:active {
-        color: #363636;
+        .active()
     }
 
     & ul {
@@ -129,11 +155,19 @@ header {
     }
 
     &-search:focus {
-        top: 100px;
-        right: 970px;
         width: 300px;
         transition: width 1s ease-out;
         background-position: right;
+    }
+
+    @media screen and (min-width: 1270px) {
+        &-search:focus {
+            top: 100px;
+            right: 700px;
+            width: 300px;
+            transition: width 1s ease-out;
+            background-position: right;
+        }
     }
 }
 
@@ -185,7 +219,7 @@ header {
 
         &-btn {
             padding: 20px 35px;
-            background-color: #998675;
+            background-color: @button-color;
             border-radius: 3.0px;
             font-family: Raleway;
             font-size: 14px;
@@ -197,11 +231,11 @@ header {
             margin: 50px 0 0 0;
 
             &:hover {
-                background-color: #c7b299;
+                .hover-btn()
             }
 
             &:active {
-                background-color: #363636;
+                .active-btn()
             }
 
             &:focus {
@@ -224,8 +258,7 @@ header {
         transform-origin: bottom left;
 
         &:hover {
-            border-bottom: 3px solid #c7b299;
-            border-left: 3px solid #c7b299;
+            border-color: #c7b299;
         }
 
         &:active {
@@ -256,31 +289,182 @@ header {
             border-color: #363636;
         }
     }
-}
 
-&-pagination {
-    box-sizing: border-box;
-    width: 20%;
-    margin: 15% auto 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    &-circle {
-        display: block;
-        width: 11px;
-        height: 11px;
-        opacity: 0.5;
-        background-color: #ffffff;
-        border-radius: 50%;
-        border: 2px solid transparent;
-        margin: 0 5px;
+    &-pagination {
+        box-sizing: border-box;
+        width: 20%;
+        margin: 15% auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &:hover {
-            border: 2.0px solid #d3c1ad;
-            background-color: transparent;
-            transform: scale(1.2);
+        &-circle {
+            display: block;
+            width: 11px;
+            height: 11px;
+            opacity: 0.5;
+            background-color: #ffffff;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            margin: 0 5px;
+
+            &:hover {
+                border: 2.0px solid #d3c1ad;
+                background-color: transparent;
+                transform: scale(1.2);
+            }
         }
     }
 }
+
+.services {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 15%;
+
+    &-wrp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 25%;
+        margin: 0 1%;
+
+        &:after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 40%;
+            background-color: #555;
+        }
+
+        &:hover:after {
+            background-color: #c7b299;
+        }
+
+        &:hover .services-svg {
+            fill: #c7b299;
+        }
+
+        &:hover .services-h2 {
+            color: #c7b299;
+        }
+    }
+
+    &-h2 {
+        .h2-style();
+        font-size: 22px;
+        width: 100%;
+    }
+
+    &-p {
+        .p-style();
+    }
+
+    &-svg {
+        margin: 0 0 20px 0;
+        fill: #555;
+    }
+}
+
+.realization {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 700px;
+    background-color: #fbfaf8;
+    text-align: center;
+    padding: 70px 25%;
+    background-image: url(../img/bcg-realization-front.jpg), url(../img/bcg-realization-left.jpg), url(../img/bcg-realization-right.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom, 25% bottom, 75% bottom;
+
+
+    &-h2 {
+        .h2-style();
+        font-size: 30px;
+        margin: 0;
+    }
+
+    &-p {
+        .p-style();
+        margin: 20px 0 0 0;
+    }
+}
+
+.text-boxes {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3% 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+
+    &-wrp {
+        box-sizing: border-box;
+        width: 70%;
+    }
+
+    &-h2 {
+        font-family: Raleway;
+        font-size: 28px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #c7b299;
+        margin: 0;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: #ffffff;
+
+        &:hover {
+            .hover();
+        }
+
+        &:active {
+            .active();
+        }
+    }
+
+    &-p {
+        margin: 1.5% 0 0 0;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #615855;
+
+    }
+
+    &-btn {
+        background-color: @button-color;
+        border-radius: 3.0px;
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 20%;
+        height: 50px;
+        outline: none;
+        border: none;
+        padding: 0;
+
+        &:hover {
+            .hover-btn();
+        }
+
+        &:active {
+            .active-btn();
+        }
+    }
+
+
 }
