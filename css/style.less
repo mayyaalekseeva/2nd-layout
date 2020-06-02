@@ -27,8 +27,6 @@
 
 }
 
-
-
 .h2-style() {
     font-family: Raleway;
     line-height: 1.2;
@@ -465,6 +463,117 @@ header {
             .active-btn();
         }
     }
+}
+
+.projects {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3% 11%;
+
+    &-description {
+        text-align: center;
+        padding: 0 10%;
+
+        &-h2 {
+            font-family: Raleway;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #555555;
+            margin: 0;
+        }
+
+        &-p {
+            font-family: Montserrat;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #8c8c8c;
+            margin: 20px 0;
+        }
+    }
+
+    &-tabs {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
 
 
+        &-btn {
+            margin: 0 0.5%;
+            padding: 10px 20px;
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+            color: #8c8c8c;
+            border: 1.0px solid #ebebeb;
+            border-radius: 3px;
+            outline: none;
+            background-color: transparent;
+            box-sizing: border-box;
+
+            &:hover {
+                .hover-btn();
+                color: #fff;
+                border-color: #c7b299;
+
+            }
+
+            &:active {
+                .active-btn();
+                color: #fff;
+                border-color: #363636;
+            }
+        }
+
+        &-active-tab {
+            background-color: @button-color;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    &-articles-wrp {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 0 0;
+    }
+
+    &-articles {
+        box-sizing: border-box;
+        margin: 30px 0;
+
+        &-img {
+            margin: 0;
+            padding: 0;
+        }
+
+        &-txt {
+            padding: 25px 30px;
+            margin: 0;
+            background-color: #fbfaf8;
+
+            &-h3 {
+                font-family: Raleway;
+                font-size: 20px;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #c7b299;
+                margin: 0 0 10px 0;
+            }
+
+            &-p {
+                font-family: Montserrat;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #d1d1d1;
+                margin: 0;
+            }
+        }
+    }
 }
