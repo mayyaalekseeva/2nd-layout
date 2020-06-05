@@ -10,7 +10,7 @@ body {
   max-width: 1920px;
   box-sizing: border-box;
 }
-header {
+.header {
   width: 100%;
   box-sizing: border-box;
   background-image: url(../img/header-bcg.jpg);
@@ -20,31 +20,32 @@ header {
   background-color: #363636;
   padding: 35px;
 }
-header-icons {
+.header-icons {
   box-sizing: border-box;
-  width: 190%;
   display: flex;
-  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 0 10px 0;
 }
-header-icons-cart {
+.header-icons-cart {
   padding: none;
   border: none;
   outline: none;
   background-color: transparent;
   color: transparent;
+  margin: 0 15px 0 0;
 }
-header-icons-cart-svg {
+.header-icons-cart-svg {
   background-color: transparent;
   fill: #fff;
 }
-header-icons-cart-svg:hover {
-  color: #998675;
+.header-icons-cart-svg:hover {
+  fill: #998675;
 }
-header-icons-cart-svg:active {
-  color: #363636;
+.header-icons-cart-svg:active {
+  fill: #363636;
 }
-header-icons-search {
-  background-image: url(../img/search.png);
+.header-icons-search {
+  background-image: url(../img/search.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -53,15 +54,18 @@ header-icons-search {
   width: 24px;
   height: 24px;
 }
-header-icons-search:focus {
+.header-icons-search:focus {
   width: 300px;
   transition: width 1s ease-out;
   background-position: right;
+  position: absolute;
+  top: 100px;
+  right: 700px;
 }
-@media screen and (min-width: 1270px) {
-  header-icons-search:focus {
-    top: 100px;
-    right: 700px;
+@media screen and (max-width: 1270px) {
+  .header-icons-search:focus {
+    top: 200px;
+    right: 100px;
     width: 300px;
     transition: width 1s ease-out;
     background-position: right;
