@@ -17,9 +17,13 @@
                 </svg>
                 <span class="header-logo-name">Waxom</span>
             </a>
-
             <nav class="header-nav">
-                <ul>
+                <label class="header-nav-label" for="header-nav-menu"></label>
+                <input id="header-nav-menu" type="checkbox">
+                <span class="header-nav-line"></span>
+                <span class="header-nav-line"></span>
+                <span class="header-nav-line"></span>
+                <ul class="header-nav-menu">
                     <li> <a href="#" class="header-nav-link">Home</a></li>
                     <li> <a href="#" class="header-nav-link">About us</a></li>
                     <li> <a href="#" class="header-nav-link">Portfolio</a></li>
@@ -174,8 +178,6 @@
                         </svg>
                     </button>
                 </article>
-            </div>
-            <div class="projects-articles-wrp">
                 <article class="projects-articles">
                     <img src="img/project4.jpg" alt="project4" class="projects-articles-img" width="370" height="235">
                     <div class="projects-articles-txt">
@@ -183,7 +185,7 @@
                         <span class="projects-articles-txt-p">Photography, Nature</span>
                     </div>
                     <button class="projects-articles-btn-link projects-articles-btn">
-                        <svg class="projects-articles-btn-link-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewBox="0 0 28 28">
+                        <svg class="projects-articles-btn-link-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
                             <path d="M24.499084,3.4936523 C22.09607,1.088623 18.158936,1.088623 15.755615,3.4936523 C15.755615,3.4936523 11.034546,8.217285 11.034546,8.217285 C12.653687,7.756592 14.40918,7.8771973 15.943298,8.593262 C15.943298,8.593262 18.397339,6.137207 18.397339,6.137207 C19.35199,5.182129 20.902893,5.182129 21.85736,6.137207 C22.811646,7.0915527 22.811646,8.643555 21.85736,9.599121 C21.85736,9.599121 18.77246,12.686279 18.77246,12.686279 C18.77246,12.686279 16.744263,14.714844 16.744263,14.714844 C15.789795,15.67041 14.23877,15.67041 13.284363,14.714844 C13.284363,14.714844 10.642578,17.358887 10.642578,17.358887 C11.2561035,17.9729 11.971924,18.432617 12.721985,18.723633 C14.750244,19.52417 17.102112,19.21753 18.874695,17.819092 C19.045105,17.682861 19.232544,17.529053 19.385986,17.358887 C19.385986,17.358887 22.57306,14.169922 22.57306,14.169922 C22.57306,14.169922 24.499084,12.2421875 24.499084,12.2421875 C26.91919,9.83667 26.91919,5.914551 24.499084,3.4936523 ZM11.937866,19.52417 C11.937866,19.52417 9.585876,21.878418 9.585876,21.878418 C8.631409,22.833496 7.0803833,22.833496 6.1259766,21.878418 C5.1713867,20.922363 5.1713867,19.371582 6.1259766,18.415771 C6.1259766,18.415771 11.239197,13.300781 11.239197,13.300781 C12.193481,12.345215 13.744629,12.345215 14.698975,13.300781 C14.698975,13.300781 17.340698,10.656494 17.340698,10.656494 C16.727173,10.04248 16.01123,9.582031 15.261536,9.292969 C13.130859,8.439209 10.625427,8.831055 8.835815,10.43457 C8.750671,10.503174 8.665405,10.588623 8.59729,10.656494 C8.59729,10.656494 3.484192,15.773926 3.484192,15.773926 C1.0809326,18.177734 1.0809326,22.116943 3.484192,24.521484 C5.887329,26.927246 9.824585,26.927246 12.2276,24.521484 C12.2276,24.521484 16.846436,19.848877 16.846436,19.848877 C14.494568,20.394531 13.949036,20.32666 11.937866,19.52417 Z" />
                         </svg>
                     </button>
@@ -231,7 +233,7 @@
             <button class="projects-loadmore-btn">Load More</button>
         </section>
         <section class="video">
-            <video controls loop muted src="video/video.mp4" class="video-file" poster="../img/bcg-video.jpg" id="video"></video>
+            <video controls loop muted src="video/video.mp4" class="video-file" poster="img/bcg-video.jpg" id="video" height="705"></video>
             <button class="video-btn">
                 <svg class="video-btn-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="76" viewBox="0 0 80 76">
                     <path d="M34.933594,56.81958 C34.637512,56.81958 34.339172,56.755127 34.060303,56.62549 C33.336792,56.28662 32.874207,55.559082 32.874207,54.760254 C32.874207,54.760254 32.874207,25.235107 32.874207,25.235107 C32.874207,24.436035 33.336548,23.708252 34.060303,23.369629 C34.783447,23.030273 35.639526,23.141113 36.252625,23.652588 C36.252625,23.652588 53.967285,38.415283 53.967285,38.415283 C54.437073,38.80664 54.70862,39.38623 54.70862,39.997314 C54.70862,40.609375 54.437256,41.188477 53.967285,41.580322 C53.967285,41.580322 36.252625,56.34253 36.252625,56.34253 C35.87567,56.65674 35.4068,56.81958 34.933594,56.81958 ZM36.99408,29.632812 C36.99408,29.632812 36.99408,50.362305 36.99408,50.362305 C36.99408,50.362305 49.431274,39.997314 49.431274,39.997314 C49.431274,39.997314 36.99408,29.632812 36.99408,29.632812 ZM39.93683,74.99829 C34.072144,74.99902 28.173218,73.53589 22.830505,70.52759 C21.839355,69.96997 21.487915,68.71338 22.046387,67.72217 C22.603699,66.73096 23.860046,66.37891 24.851929,66.937744 C36.869812,73.703125 52.082397,71.61157 61.845276,61.845215 C73.89203,49.798096 73.89203,30.19751 61.845276,18.149902 C49.7984,6.1013184 30.19629,6.1018066 18.150024,18.149902 C6.10376,30.19751 6.10376,49.798096 18.150024,61.845215 C18.954529,62.649414 18.954529,63.954346 18.150024,64.75903 C17.346497,65.56348 16.04187,65.56348 15.237244,64.75903 C1.5844727,51.104736 1.5844727,28.890137 15.237244,15.236084 C28.890625,1.5842285 51.104065,1.5830078 64.75903,15.236084 C78.411865,28.890137 78.411865,51.104736 64.75903,64.75903 C58.033325,71.484375 49.025696,74.99829 39.93683,74.99829 Z" />
@@ -367,6 +369,69 @@
             <a href="#" class="sponsors-link"><img src="img/logo_3.png" alt="logo3" class="sponsors-link-img"></a>
             <a href="#" class="sponsors-link"><img src="img/logo_4.png" alt="logo4" class="sponsors-link-img"></a>
         </section>
+        <footer class="footer">
+            <div class="footer-wrp">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="56" viewBox="0 0 64 56">
+                            <path d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.9 31.85 19.9 31.85 19.9 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z" />
+                        </svg>
+                        <span class="footer-logo-name">Waxom</span>
+                    </a>
+                    <span class="footer-about-span">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</span>
+                    <a href="#" class="footer-about-more">Read More</a>
+                </div>
+                <div class="footer-recent">
+                    <span class="footer-recent-h2">Recent Posts</span>
+                    <a href="#" class="footer-recent-link">
+                        <span class="footer-recent-link-month">September 08, 2015</span>
+                        <span class="footer-recent-link-post">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
+                    </a>
+                    <a href="#" class="footer-recent-link">
+                        <span class="footer-recent-link-month">September 08, 2015</span>
+                        <span class="footer-recent-link-post">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</span>
+                    </a>
+                    <a href="#" class="footer-recent-link no-border">
+                        <span class="footer-recent-link-month">September 08, 2015</span>
+                        <span class="footer-recent-link-post ">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</span>
+                    </a>
+                </div>
+                <div class="footer-twitter">
+                    <span class="footer-twitter-h2">Our Twitter</span>
+                    <div class="footer-twitter-tweet">
+                        <span class="footer-twitter-tweet-post"> <a href="#" class="footer-twitter-tweet-profile">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</span>
+                        <span class="footer-twitter-tweet-date">3 mins ago</span>
+                    </div>
+                    <div class="footer-twitter-tweet">
+                        <span class="footer-twitter-tweet-post"> Mirum est <a href="#" class="footer-twitter-tweet-profile">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</span>
+                        <span class="footer-twitter-tweet-date">3 hours ago</span>
+                    </div>
+                    <div class="footer-twitter-tweet no-border">
+                        <span class="footer-twitter-tweet-post"> Soluta nobis option <a href="#" class="footer-twitter-tweet-link">bit.ly/1Hniso7</a></span>
+                        <span class="footer-twitter-tweet-date">20 days ago</span>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <span class="footer-widget-h2">Dribbble Widget</span>
+                    <div class="footer-widget-wrp">
+                        <a href="#" class="footer-widget-link"><img src="img/widget1.jpg" alt="w1" class="footer-widget-img"></a>
+                        <a href="#" class="footer-widget-link"><img src="img/widget2.jpg" alt="w2" class="footer-widget-img"></a>
+                        <a href="#" class="footer-widget-link"><img src="img/widget3.jpg" alt="w3" class="footer-widget-img"></a>
+                        <a href="#" class="footer-widget-link"><img src="img/widget4.jpg" alt="w4" class="footer-widget-img"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyrights">
+                <div class="footer-copyrights-wrp"><span class="footer-copyrights-span">Copyright © 2015<a href="#" class="footer-copyrights-link"> Waxom</a></span>
+                    <a href="#" class="footer-copyrights-dark-link">Privacy Policy</a>
+                    <a href="#" class="footer-copyrights-link footer-copyrights-span">FAQ</a>
+                    <a href="#" class="footer-copyrights-dark-link no-border">Support</a></div>
+                <div class="footer-copyrights-wrp">
+                    <span class="footer-copyrights-span">Designed by <a href="#" class="footer-copyrights-link">ThemeFire</a></span>
+                    <span class="footer-copyrights-span no-border">Only on <a href="#" class="footer-copyrights-link">Envato Market</a></span>
+                </div>
+            </div>
+        </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
